@@ -30,11 +30,11 @@ if __name__ == "__main__":
         while True:
             temp_f = int(read_temp()[1])
             if temp_f >= max_temp_f:
-                send_sms("13092581204",f"Shop temperature is {temp_f}{degree_sign}F.")
+                send_sms("HARDCODE",f"Shop temperature is {temp_f}{degree_sign}F.")
                 time.sleep(300)
 
             if temp_f <= min_temp_f:
-                send_sms("13092581204",f"Shop temperature is {temp_f}{degree_sign}F.")
+                send_sms("HARDCODE",f"Shop temperature is {temp_f}{degree_sign}F.")
                 time.sleep(300)
 
             else:
@@ -46,11 +46,11 @@ if __name__ == "__main__":
         while True:
             temp_f = int(read_temp()[1])
             if temp_f >= max_temp_f:
-                make_call("13092581204",temp_f)
+                make_call("HARDCODE",temp_f)
                 time.sleep(300)
 
             if temp_f <= min_temp_f:
-                send_sms("13092581204",temp_f)
+                send_sms("HARDCODE",temp_f)
                 time.sleep(300)
 
             else:
